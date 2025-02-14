@@ -79,8 +79,7 @@ void self_destruct(const char *file_path) {
     }
     
     fclose(file);
-    unlink(file_path);
-    printf("[!] Binary successfully self-destructed.\n");
+    printf("[!] Binary successfully overwritten with random data.\n");
 }
 
 int main(int argc, char *argv[]) {
@@ -88,7 +87,7 @@ int main(int argc, char *argv[]) {
         printf("Usage: %s <elf_binary> <mode>\n", argv[0]);
         printf("Modes: \n");
         printf("1 - Basic ELF corruption\n");
-        printf("2 - Advanced (Self-Destruction)\n");
+        printf("2 - Advanced (Self-Destruction without Deletion)\n");
         return 1;
     }
 
@@ -102,12 +101,12 @@ int main(int argc, char *argv[]) {
         remove_symbol_table(argv[1]);
         printf("[+] Binary modification complete! Harder to reverse now.\n");
     } else if (mode == 2) {
-        printf("[+] Applying self-destruction techniques...\n");
+        printf("[+] Applying self-destruction techniques (without deletion)...\n");
         corrupt_elf_header(argv[1]);
         overwrite_section_headers(argv[1]);
         remove_symbol_table(argv[1]);
         self_destruct(argv[1]);
-        printf("[+] Binary completely destroyed.\n");
+        printf("[+] Binary contents overwritten but file remains.\n");
     } else {
         printf("[!] Invalid mode selected.\n");
         return 1;
