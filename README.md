@@ -14,3 +14,8 @@ Usage:
 ./elfoblivion <binary> <mod 1 or 2>
 mod 1: basic destruction
 mod 2: hard destruction
+
+
+
+
+![image](https://github.com/user-attachments/assets/4422a247-1053-4c1b-89b4-10df87cfbdcf)
