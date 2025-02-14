@@ -16,4 +16,5 @@ mod 1: basic destruction
 mod 2: hard destruction
 
 
-![Uploading image.png…]()
+
+![image](https://github.com/user-attachments/assets/3dd9b531-66f2-482d-930d-2dbf7b6d8a4e)
