@@ -11,4 +11,6 @@ ELFOblivion is a cutting-edge anti-reversing tool designed to make ELF binaries 
 ⚡ Lightweight & Fast – Processes ELF binaries in seconds with minimal dependencies.
 
 Usage:
-./elfoblivion <binary> 
+./elfoblivion <binary> <mod 1 or 2>
+mod 1: basic destruction
+mod 2: hard destruction
